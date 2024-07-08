@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import { Routes, Route } from 'react-router-dom';
+import  Layout from './components/Layout';
+import TestView from './components/Test/TestView';
+import CalculatorView from './components/Calculator/CalculatorView';
+import CounterView from './components/Counter/CounterView';
+import TaskManager from './components/TaskManager/TaskManagerView';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Routes>
+        <Route path="/" element= {<Layout/>}>
+          <Route path="test" element= {<TestView/>} />
+          <Route path="/" element= {<TestView/>} />
+          <Route path="counter" element= {<CounterView/>} />
+          <Route path="calculator" element= {<CalculatorView/>} />
+          <Route path="taskManager" element= {<TaskManager/>} />
+          <Route path="*" element= {<TestView/>} />
+        </Route>
+      </Routes>
     </div>
   );
 }

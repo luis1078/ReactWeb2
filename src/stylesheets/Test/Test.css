@@ -1,0 +1,38 @@
+.container-test{
+    width: 1170px;
+    height: 368px;
+    margin: 10px 10px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    box-shadow: 0 3px 13px 1px rgb(0 0 0 / 9%);
+}
+
+.image-test{
+    height: 100%;
+    width: 450px;
+}
+
+.container-text-test{
+    text-align: center;
+    padding: 40px;
+    font-family: Lato, sans-serif;
+    font-weight: 400;
+    line-height: 1.5rem;
+}
+
+.name-test{
+    font-size: 1.3em;
+}
+
+.info-test{
+    font-size: 1.3em;
+    margin-top: 15px;
+    padding-bottom: 30px;
+}
+
+.text-test{
+    font-size: 1,1rem;
+    text-align: jus;
+}
